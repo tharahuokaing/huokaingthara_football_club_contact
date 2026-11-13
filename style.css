@@ -1,0 +1,28 @@
+/* ================================================================= */
+/* HUOKAINGTHARA FOOTBALL CLUB - CONTACT STYLES                      */
+/* ================================================================= */
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #020617;
+}
+::-webkit-scrollbar-thumb {
+    background: #1e293b;
+    border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #334155;
+}
+
+/* Smooth Form Fade Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.97); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+#success-alert {
+    animation: fadeIn 0.25s ease-out forwards;
+}
