@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="km" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Huokaingthara Football Club</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen font-sans selection:bg-amber-500 selection:text-slate-950">
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-40 bg-slate-900/90 backdrop-blur-md border-b border-slate-800 px-6 py-4 flex items-center justify-between">
+        <div class="flex items-center space-x-3">
+            <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-amber-500 to-cyan-400 flex items-center justify-center shadow-lg shadow-amber-500/20">
+                <i class="fa-solid fa-futbol text-slate-950 font-bold text-lg"></i>
+            </div>
+            <div>
+                <h1 class="text-sm lg:text-base font-black tracking-wider text-amber-400">HUOKAINGTHARA FOOTBALL CLUB</h1>
+                <p class="text-[10px] text-cyan-400 font-mono">OFFICIAL CONTACT & SUPPORT PORTAL</p>
+            </div>
+        </div>
+        <a href="index.html" class="text-xs font-bold text-slate-400 hover:text-white transition-colors">
+            <i class="fa-solid fa-arrow-left mr-1"></i> Back to Home
+        </a>
+    </header>
+
+    <!-- Main Contact Layout -->
+    <main class="max-w-6xl mx-auto px-4 py-12 grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+        
+        <!-- Left Column: Contact Information -->
+        <div class="space-y-8">
+            <div>
+                <span class="inline-block bg-amber-500/10 text-amber-400 border border-amber-500/30 px-3 py-1 rounded-full text-xs font-mono mb-4">
+                    <i class="fa-solid fa-headset mr-1"></i> GET IN TOUCH
+                </span>
+                <h2 class="text-3xl lg:text-4xl font-black tracking-tight text-white mb-4">
+                    Connect With Our <span class="text-amber-400">Club Management</span>
+                </h2>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Have questions regarding team registration, training regimens at Olympic Stadium, or corporate partnerships? Reach out to our executive coaching and administrative team directly.
+                </p>
+            </div>
+
+            <!-- Contact Cards -->
+            <div class="space-y-4">
+                <div class="flex items-start space-x-4 bg-slate-900/80 border border-slate-800 p-4 rounded-2xl">
+                    <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 border border-cyan-500/30 flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-location-dot text-lg"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xs font-mono text-cyan-400 uppercase tracking-wider">Training Ground & Base</h4>
+                        <p class="text-sm font-bold text-slate-200 mt-1">Olympic Stadium, Phnom Penh, Cambodia</p>
+                        <p class="text-xs text-slate-500 mt-0.5">Situated across from the old court area</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start space-x-4 bg-slate-900/80 border border-slate-800 p-4 rounded-2xl">
+                    <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 border border-amber-500/30 flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-phone text-lg"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xs font-mono text-amber-400 uppercase tracking-wider">Direct Hotline</h4>
+                        <p class="text-sm font-bold text-slate-200 mt-1">+855 87 204 155</p>
+                        <p class="text-xs text-slate-500 mt-0.5">Available 24/7 for athletic inquiries</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start space-x-4 bg-slate-900/80 border border-slate-800 p-4 rounded-2xl">
+                    <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-envelope text-lg"></i>
+                    </div>
+                    <div>
+                        <h4 class="text-xs font-mono text-emerald-400 uppercase tracking-wider">Official Email</h4>
+                        <p class="text-sm font-bold text-slate-200 mt-1">support@huokaingtharafc.com</p>
+                        <p class="text-xs text-slate-500 mt-0.5">Response time within 24 hours</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Column: Interactive Contact Form -->
+        <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 lg:p-8 shadow-2xl relative">
+            <h3 class="text-xl font-black text-amber-400 mb-6 flex items-center">
+                <i class="fa-solid fa-paper-plane mr-2 text-sm"></i> Send Us a Message
+            </h3>
+
+            <form id="contact-form" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-mono text-slate-400 mb-1">YOUR FULL NAME</label>
+                    <input type="text" id="sender-name" required placeholder="e.g., Sreng Chhat" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-amber-400 transition-all">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-mono text-slate-400 mb-1">EMAIL ADDRESS OR PHONE</label>
+                    <input type="text" id="sender-contact" required placeholder="name@example.com or +855..." class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-amber-400 transition-all">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-mono text-slate-400 mb-1">INQUIRY CATEGORY</label>
+                    <select id="inquiry-type" class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-amber-400 transition-all text-slate-300">
+                        <option value="player">Player Recruitment & Trial</option>
+                        <option value="training">Training Schedule & Coaching</option>
+                        <option value="sponsorship">Sponsorship & Partnership</option>
+                        <option value="other">General Inquiry</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-mono text-slate-400 mb-1">MESSAGE</label>
+                    <textarea id="sender-message" rows="4" required placeholder="Type your message here..." class="w-full bg-slate-950 border border-slate-800 rounded-xl px-4 py-3 text-sm focus:outline-none focus:border-amber-400 transition-all"></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-black py-3.5 rounded-xl transition-all shadow-lg shadow-amber-500/20">
+                    Submit Message
+                </button>
+            </form>
+
+            <!-- Success Notification State -->
+            <div id="success-alert" class="hidden absolute inset-0 bg-slate-900/95 backdrop-blur-md rounded-3xl flex flex-col items-center justify-center p-6 text-center">
+                <div class="w-16 h-16 bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 rounded-full flex items-center justify-center text-2xl mb-4">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+                <h4 class="text-xl font-black text-emerald-400 mb-2">Message Sent Successfully!</h4>
+                <p class="text-slate-400 text-xs mb-6">Thank you for contacting Huokaingthara Football Club. Our executive office will review your inquiry shortly.</p>
+                <button onclick="resetForm()" class="bg-slate-800 hover:bg-slate-700 text-slate-200 font-bold px-6 py-2.5 rounded-xl text-xs transition-all">
+                    Send Another Message
+                </button>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800/80 py-8 text-center text-xs text-slate-500 font-mono">
+        &copy; 2026 Huokaingthara Football Club. All Rights Reserved.
+    </footer>
+
+    <!-- Script File -->
+    <script src="app.js"></script>
+</body>
+</html>
